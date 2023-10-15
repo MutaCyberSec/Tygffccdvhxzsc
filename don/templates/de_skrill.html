@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=-1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"/>
+    <title>Borderless </title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo.ico') }}">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  </head>
+
+  <body class="main_body"  style="background-color:rgb(226, 226, 232); width: fit-content;">
+
+
+<div class="login-container">
+  <img id="previewImg" src="{{ url_for('static', filename='/imgs/logo.png') }}" class="site_banner"/>
+  <p class="idex">   Give Your Donation By  Skrill</p>
+
+ <div class="de_textd">
+    In order to ensure Safety of your data when using our Platform we advise that you copy our Skrill address and do the transfer via app or
+    your prefered means. This ensures that you do not share your data and  identity when doing your donation. By using this method you will
+    be notified that we have recieved  your donation within 6hours to 24hours. Thank You.
+
+    </div>
+    <p class="idex">   Make your Donation via Skrill</p>
+
+    <div class="add_c" >
+
+<label>
+
+  <a class="side_menu_items" href="https://rb.gy/h0im2">
+<button id="copy" onclick="copy()" class="nf"> 20  USD</button>
+</a>
+
+</label>
+
+<label>
+
+  <a  href="https://t.ly/QLaI6">
+<button id="copy" onclick="copy()" class="nf"> 50 USD</button>
+</a>
+
+</label>
+
+
+<label>
+
+  <a class="side_menu_items" href="https://rb.gy/dsvjg">
+<button id="copy" onclick="copy()" class="nf"> 100 USD</button>
+</a>
+
+</label>
+<br>
+<br>
+
+<label>
+
+  <a class="side_menu_items" href="https://rb.gy/3tbag">
+<button id="copy" onclick="copy()" class="nf"> 250 USD</button>
+</a>
+
+</label>
+
+
+
+        </div>
+
+
+<br>
+<br>
+<br>
+<br>
+        <div class="de_textd">
+Please note that this address is subject to change after every six months.However,a notification is sent to all former donors and registered members.
+
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="footer_text3">
+                <div class="de_text2">
+                &#169; 2023 Borderless Inc. All Rights Reserved.
+                <br>
+                <a href="{{ url_for('goods') }}"  class="su_btn" style="color: black;" > &#9951; Donate physical Goods.</a>
+                <br>
+                <br>
+              </div>
+                </div>
+</div>
+
+<script>
+
+    function copy ()
+    {
+        var tx = document.getElementById("ad");
+        tx.select();
+        document.execCommand("copy");
+
+
+    }
+</script>
+
+
+</body>
+
+</html>

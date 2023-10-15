@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=-1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"/>
+    <title>Borderless </title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo.ico') }}">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> 
+  </head>
+
+  <body class="main_body"  style="background-color:rgb(226, 226, 232); width: fit-content;">
+  
+
+<div class="login-container">
+  <img id="previewImg" src="{{ url_for('static', filename='/imgs/logo.png') }}" class="site_banner"/>
+  <p class="idex">   Give Your Donation By  Ethereum</p>
+
+ <div class="de_textd">
+    In order to ensure Safety of your data when using our Platform we advise that you copy our Ethereum address and do the transfer via app or
+    your prefered means. This ensures that you do not share your data and  identity when doing your donation. By using this method you will
+    be notified that we have recieved  your donation within 6hours to 24hours. Thank You.
+    
+    </div>
+    <p class="idex">   Copy Ethereum Donation  Adresss</p>
+
+    <div class="add_c" >
+        <p   class="ide2"> Address Hidden</p>
+        <button id="copy" onclick="copy()" class="nf"> Copy</button>
+        <input type="text" style="opacity: 0;" id="ad" value="0xb9a2dba088b1f963672511c2bef3c5c593832d0f" >
+
+
+
+
+        </div>
+
+        <div class="de_textd">
+Please note that this address is subject to change after every six months.However,a notification is sent to all former donors and registered members.
+Also Only send Ethereum currency to this address or the Donation might be lost.
+
+            </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="footer_text3">
+                <div class="de_text2">
+                &#169; 2023 Borderless Inc. All Rights Reserved.
+                <br>
+                <a href="{{ url_for('goods') }}"  class="su_btn" style="color: black;" > &#9951; Donate physical Goods.</a>
+                <br>
+                <br>
+              </div>
+                </div>
+</div>
+
+<script>
+
+    function copy ()
+    {
+        var tx = document.getElementById("ad");
+        tx.select();
+        document.execCommand("copy");
+
+
+    }
+</script>
+
+
+</body>
+
+</html>

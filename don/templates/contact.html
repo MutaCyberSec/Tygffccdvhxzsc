@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=-1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"/>
+    <title>Borderless </title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo.ico') }}">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> 
+ 
+  </head>
+
+
+  <body class="main_body"  style="background-color:rgb(226, 226, 232); width: fit-content;">
+  
+
+<div class="login-container">
+  <img id="previewImg" src="{{ url_for('static', filename='/imgs/logo.png') }}" class="site_banner"/>
+  
+   <br><br><br>
+   <form method="POST" action="{{ url_for('contact') }}">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+    <label class="lbl"  for="username">Email
+        <br>
+    <input name="email" type="email" required class="inputs" Placeholder="Email">
+
+</label>
+<br><br>
+<label class="lbl"  for="username">Inquiry
+    <br>
+<input name="inq" type="text" required class="inputs" Placeholder="Inquiry">
+
+</label>
+<br><br>
+<label class="lbl"  for="username">Short Description
+    <br>
+
+<textarea class="inputs" type="text" required  name="desc" id="inbox" placeholder="Short Description" max 100  rows=" 5" style="margin: 0px; width: 250px; height: 69px;"></textarea>
+
+
+</label>
+
+<br>
+
+
+<br>   
+<button type="submit" class="sub_btn"> Send</button>
+
+
+
+
+    </form>
+
+
+
+
+</div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=-1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"/>
+    <title>Borderless </title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo.ico') }}">
+
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> 
+ 
+  </head>
+
+
+  <body class="main_body"  style="background-color:rgb(226, 226, 232); width: fit-content;">
+  
+
+<div class="login-container">
+  <img id="previewImg" src="{{ url_for('static', filename='/imgs/logo.png') }}" class="site_banner"/>
+    <form method=POST action="{{ url_for('update_password') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+        <h4>
+            <label class="lbl"  for="username">Create New Password
+</label>
+
+        </h4>
+
+        <input required type="password" minlength="8" class="inputs" name="pas1" placeholder="Password" />
+<br>
+{{mess}}
+<br>
+        <input required type="text" minlength="8" class="inputs" name="pas2" placeholder="Confirm Password" />
+        <br>
+        <br>
+
+        <input type="submit" class="sub_btn" value="Done" />
+    </form>
+</div>
+
+
+
+
+</body>
+
+</html>

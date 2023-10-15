@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=-1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"/>
+    <title>Borderless </title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo.ico') }}">
+
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> 
+ 
+  </head>
+
+
+  <body class="main_body"  style="background-color:rgb(226, 226, 232); width: fit-content;">
+  
+
+<div class="login-container">
+  <img id="previewImg" src="{{ url_for('static', filename='/imgs/logo.png') }}" class="site_banner"/>
+  
+  <div class="de_textd">
+    Physical goods and food rations are accepted as donations as long as the following conditions are met:
+    <br> <br>
+    * The Donor is willing to handle shipping to the respective ports or collection stations.
+    This will happen only after they have discussed with our team on the nature of goods,quantity,packaging and customs
+    in the respective country. <br> <br>
+    * The goods have a shelf life of longer than 6 months after the shipping date and and an extended 3 months shelf life 
+    after the expected collection or arrival dates. <br> <br>
+    * For goods like shoes and clothes they should be fitting to people of age 3years to 19 years. We also accept clothing and sanitary
+    related goods for the elderly. However,it should be noted that we do not do campigns for the elderly on the time being and therefore  we 
+    send the donations to organisation or other groups which focus on this area and and specific group.<br> <br>
+    * For manfuctured and packed foods,dry or not, the goods must be packed or manfuctured not more than 9 months prior to the shipping date.  <br> <br>
+    *All stationary and educational materials are accepted as donations,this include materials  like books,pens,physical exercise materials and more of
+    this nature. However,the materials should be in English,Swahili,French or German considering this are the main Languages used in the geographical 
+    zone we are based and operate.<br> <br>
+    For inquiry,
+
+    <a href="{{ url_for('contact') }}"  class="su_btn" style="color: black;" > <b>Contact Us</b></a>
+
+</div>
+
+</div>
+
+
+
+
+</body>
+
+</html>

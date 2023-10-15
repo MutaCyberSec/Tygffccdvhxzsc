@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=-1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"/>
+    <title>Borderless </title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='logo.ico') }}">
+
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> 
+ 
+  </head>
+
+
+  <body class="main_body"  style="background-color:rgb(226, 226, 232); width: fit-content;">
+  
+
+<div class="login-container">
+  <img id="previewImg" src="{{ url_for('static', filename='/imgs/logo.png') }}" class="site_banner"/>
+    <form method="POST" action="{{ url_for('register') }}" enctype="multipart/form-data"   >
+     
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+        <label class="lbl"  for="username">Email
+          <br>
+    <input name="email"  placeholder="Email" type="email" class="inputs">
+    <br>
+    <br>
+ 
+    <label class="lbl"  for="username">Password
+
+      <br>
+
+    <input name="passc" aria-required maxlength="12" minlength="8"   type="password" class="inputs">
+    <br>
+    <br>
+    <label class="lbl"  for="username">Confirm password
+      <br>
+    <input name="passc2"  ari-required  maxlength="12" minlength="8"   placeholder="Repeat Password" type="password" class="inputs">
+    <br>
+  
+      
+    <br>
+    <br>
+    
+    
+        <button type="submit" class="sub_btn" >Register</button>
+    </form>
+
+
+</body>
+
+</html>
