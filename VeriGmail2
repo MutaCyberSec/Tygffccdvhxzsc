@@ -35,3 +35,4 @@ with open('nal.txt', 'w') as file:
         dem = ",".join(gm)
         file.write(dem)
 print(len(gm))
+
