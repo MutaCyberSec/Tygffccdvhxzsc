@@ -1,0 +1,29 @@
+from faker import Faker
+
+# Create a Faker instance
+fake = Faker()
+
+# Generate a random USA first name
+
+def sec():
+	trS = set()
+        for x in range(200):
+                usa_first_name = fake.first_name()
+                trS.add(usa_first_name)
+        trx = list(trS)
+        with open('firstUs.txt', 'w') as file:
+                dem = ",".join(trx)
+                file.write(dem)
+	fake_last_name = fake.last_name()
+
+
+def fir():
+	trS = set()
+	for x in range(200):
+		usa_first_name = fake.first_name()
+		trS.add(usa_first_name)
+	trx = list(trS)
+	with open('firstUs.txt', 'w') as file:
+        	dem = ",".join(trx)
+        	file.write(dem)
+#print("Random USA First Name:", usa_first_name)
