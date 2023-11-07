@@ -7,7 +7,7 @@ import dns.resolver
 
 de_arr = []
 
-with open('norf.txt', 'r') as file:
+with open('names1.txt', 'r') as file:
         for line in file:
                 cleaned_text = re.sub(r'[0-9@#$%^&*,;:]', '',line)
                 de_arr.append(cleaned_text)
@@ -16,7 +16,7 @@ second = []
 
 
 
-with open('nors.txt', 'r') as file:
+with open('names2.txt', 'r') as file:
         for line in file:
                 cleaned_text = re.sub(r'[0-9@#$%^&*,.();:]', '',line)
                 second.append(cleaned_text)
@@ -29,7 +29,7 @@ emails = []
 
 import string
 
-for x in range(30000):
+for x in range(3000000):
 
 
         fn = random.choice(de_arr)
