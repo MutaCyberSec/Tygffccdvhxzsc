@@ -16,18 +16,13 @@ email_body = """
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Thank You</title>
+  <title>Email Confirmation</title>
 </head>
 <body style ="font-size: 20px;">
-  <p>We extend our heartfelt gratitude for your generous support. Your donations make a profound impact, helping us create positive change in our community. Thank you.</p>
+  <p>You have received this email because it was used to create n account.If this wasn't you please ignore it.</p>
 
-  <p>If you feel like you could help another family through Psychological ,financial or emotional difficulties or help  a child save their dreams, please visit our website:
 
-<br> <a href="https://borderlesscharities.com" style="display: inline-block; padding: 10px 20px;     background-color: #093157; color: white; text-decoration: none; border-radius: 5px;">Borderless</a></p>
-<br>
-If you received this email in the spam folder,please mark as not spam since this is our new domain
-where Gmail has less history about.
-To unsubscribe from our newsletters respond to this email with the word "unsubscribe"
+</p>
 </body>
 </html>
 """
